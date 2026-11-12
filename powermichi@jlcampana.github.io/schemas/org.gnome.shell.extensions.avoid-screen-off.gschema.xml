@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.avoid-screen-off" path="/org/gnome/shell/extensions/avoid-screen-off/">
+    <key name="enabled" type="b">
+      <default>false</default>
+      <summary>Evitar el bloqueo y el apagado de la pantalla</summary>
+    </key>
+  </schema>
+</schemalist>

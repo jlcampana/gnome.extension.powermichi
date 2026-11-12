@@ -1,0 +1,9 @@
+{
+  "uuid": "powermichi@jlcampana.github.io",
+  "name": "PowerMichi",
+  "description": "Retoques propios de GNOME en una sola extensión, cada uno se activa por separado en sus ajustes: Pantalla activa (evita el bloqueo y el apagado de la pantalla), Transparencias (opacidad y blur de Nautilus y Ptyxis), barra superior de color, botones de sesión en rojo, reborde de las ventanas, imagen en el botón de aplicaciones del dock, clic en la bandeja que abre la app y ayudante D-Bus para capturas.",
+  "settings-schema": "org.gnome.shell.extensions.powermichi",
+  "url": "https://github.com/jlcampana/gnome.extension.powermichi",
+  "shell-version": ["46", "47", "48", "49", "50", "51"],
+  "version": 1
+}

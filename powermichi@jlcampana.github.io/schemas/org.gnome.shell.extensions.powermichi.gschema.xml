@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ajustes de PowerMichi. Los de Pantalla activa y Transparencias siguen en sus esquemas de siempre
+     (avoid-screen-off y transparencias), que también los leen scripts y la extensión de Nautilus. -->
+<schemalist>
+  <schema id="org.gnome.shell.extensions.powermichi" path="/org/gnome/shell/extensions/powermichi/">
+    <!-- Módulos activados -->
+    <key name="modulo-pantalla-activa" type="b">
+      <default>true</default>
+      <summary>Pantalla activa: botón en Ajustes rápidos que evita el bloqueo y el apagado</summary>
+    </key>
+    <key name="modulo-transparencias" type="b">
+      <default>true</default>
+      <summary>Transparencias: opacidad y blur de Nautilus y Ptyxis</summary>
+    </key>
+    <key name="modulo-barra-panel" type="b">
+      <default>true</default>
+      <summary>Barra superior de un color fijo</summary>
+    </key>
+    <key name="modulo-botones-sesion" type="b">
+      <default>true</default>
+      <summary>Botones de apagar y de confirmar en rojo</summary>
+    </key>
+    <key name="modulo-reborde" type="b">
+      <default>true</default>
+      <summary>Reborde de las ventanas (código de P7 Borders)</summary>
+    </key>
+    <key name="modulo-boton-aplicaciones" type="b">
+      <default>true</default>
+      <summary>Imagen propia en el botón Mostrar aplicaciones de Dash to Dock</summary>
+    </key>
+    <key name="modulo-clic-bandeja" type="b">
+      <default>true</default>
+      <summary>Clic izquierdo en iconos de la bandeja abre su app</summary>
+    </key>
+    <key name="modulo-capturas" type="b">
+      <default>false</default>
+      <summary>Ayudante D-Bus para colocar ventanas en capturas (org.evilnagi.Capturas)</summary>
+    </key>
+
+    <!-- Barra superior -->
+    <key name="barra-color" type="s">
+      <default>'#2e2e32'</default>
+      <summary>Color de la barra superior (#rrggbb)</summary>
+    </key>
+    <key name="barra-opacidad" type="d">
+      <range min="0.0" max="1.0"/>
+      <default>0.95</default>
+      <summary>Opacidad de la barra superior</summary>
+    </key>
+    <key name="barra-dock" type="b">
+      <default>true</default>
+      <summary>Poner también el color y la opacidad en el dock (Dash to Dock / Ubuntu Dock)</summary>
+    </key>
+
+    <!-- Botones de sesión -->
+    <key name="botones-sesion-color" type="s">
+      <default>'#e5484d'</default>
+      <summary>Color de los botones de apagar y de confirmar (#rrggbb)</summary>
+    </key>
+
+    <!-- Botón de aplicaciones -->
+    <key name="boton-aplicaciones-imagen" type="s">
+      <default>''</default>
+      <summary>Imagen del botón de aplicaciones</summary>
+      <description>Vacío: ~/.local/share/icons/apps-propias/boton-aplicaciones.png</description>
+    </key>
+
+    <!-- Clic en la bandeja -->
+    <key name="clic-bandeja-apps" type="a{ss}">
+      <default>{'1Password_status_icon_1': '1password.desktop'}</default>
+      <summary>Iconos de la bandeja que abren su app</summary>
+      <description>Id del icono (StatusNotifierItem) → lanzador .desktop que se abre con el clic izquierdo.</description>
+    </key>
+  </schema>
+</schemalist>
